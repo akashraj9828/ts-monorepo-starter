@@ -1,3 +1,5 @@
 import { main } from '@mylib/main';
+import { log } from '@mylib/logger';
 
-main(); 
+main();
+log.debug('asads');
