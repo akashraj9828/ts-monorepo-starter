@@ -11,7 +11,8 @@
     "format": "prettier --write \"**/*.{ts,json,md}\"",
     "start": "ts-node -r tsconfig-paths/register index.ts",
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only index.ts",
-    "postinstall": "husky"
+    "postinstall": "husky",
+    "clean": "rimraf packages/*/dist dist packages/*/tsconfig.tsbuildinfo"
   },
   "devDependencies": {
     "@babel/core": "^7.24.0",
@@ -33,7 +34,8 @@
     "typescript": "^5.3.3",
     "nodemon": "^3.1.0",
     "ts-node-dev": "^2.0.0",
-    "tsconfig-paths": "^4.2.0"
+    "tsconfig-paths": "^4.2.0",
+    "rimraf": "^5.0.5"
   },
   "lint-staged": {
     "*.{ts,tsx}": [

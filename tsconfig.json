@@ -15,6 +15,7 @@
     "rootDir": ".",
     "outDir": "dist"
   },
+  "exclude": ["**/__tests__", "**/*.test.ts"],
   "ts-node": {
     "require": ["tsconfig-paths/register"],
     "transpileOnly": true
