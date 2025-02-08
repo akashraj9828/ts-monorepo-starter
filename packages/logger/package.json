@@ -6,5 +6,8 @@
   "scripts": {
     "build": "tsc",
     "test": "jest"
+  },
+  "dependencies": {
+    "winston": "^3.11.0"
   }
-} 
+}

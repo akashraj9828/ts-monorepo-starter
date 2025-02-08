@@ -1,8 +1,9 @@
-import { logger } from '@mylib/logger';
+import { log } from '@mylib/logger';
 import { util } from '@mylib/util';
 
 export const main = (): void => {
-  console.log('This is the main package');
-  logger();
+  log.info('This is the main package');
+  log.warn('This is a warning message');
+  log.error('This is an error message');
   util();
-}; 
+};
