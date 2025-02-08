@@ -28,12 +28,12 @@ A modern, feature-rich monorepo starter template using TypeScript, Lerna, ESLint
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/ts-monorepo-starter.git
+   git clone https://github.com/akashraj9828/ts-monorepo-starter.git
    cd ts-monorepo-starter
    ```
 2. Install dependencies:
    ```bash
-   npm install
+   yarn install
    ```
 
 ## Project Structure
