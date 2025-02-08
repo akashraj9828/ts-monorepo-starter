@@ -118,6 +118,40 @@ This template uses Husky to manage Git hooks:
 
 - Pre-commit: Runs lint-staged to check and format staged files
 - Pre-push: Runs tests to ensure all tests pass before pushing
+- Commit-msg: Ensures commit messages follow [Conventional Commits](https://www.conventionalcommits.org/) specification
+
+### Commit Message Format
+
+This repository follows the Conventional Commits specification. Commit messages should be structured as follows:
+
+```
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+Types include:
+
+- `feat`: A new feature
+- `fix`: A bug fix
+- `docs`: Documentation changes
+- `style`: Code style changes (formatting, etc)
+- `refactor`: Code changes that neither fix bugs nor add features
+- `perf`: Performance improvements
+- `test`: Adding or modifying tests
+- `build`: Changes to build system or dependencies
+- `ci`: Changes to CI configuration
+- `chore`: Other changes that don't modify src or test files
+
+Examples:
+
+```bash
+feat: add new package validation feature
+fix(auth): resolve token expiration issue
+docs: update installation instructions
+```
 
 ## License
 

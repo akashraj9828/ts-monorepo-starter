@@ -39,7 +39,9 @@
     "nodemon": "^3.1.0",
     "ts-node-dev": "^2.0.0",
     "tsconfig-paths": "^4.2.0",
-    "rimraf": "^5.0.5"
+    "rimraf": "^5.0.5",
+    "@commitlint/cli": "^19.0.3",
+    "@commitlint/config-conventional": "^19.0.3"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
