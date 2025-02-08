@@ -9,9 +9,9 @@
     "build": "lerna run build",
     "lint": "eslint . --ext .ts",
     "format": "prettier --write \"**/*.{ts,json,md}\"",
-    "start": "ts-node index.ts",
-    "postinstall": "husky",
-    "dev": "lerna run build --watch --parallel & nodemon --watch 'packages/*/src/**/*.ts' --watch 'index.ts' -e ts --exec 'ts-node' index.ts"
+    "start": "ts-node -r tsconfig-paths/register index.ts",
+    "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only index.ts",
+    "postinstall": "husky"
   },
   "devDependencies": {
     "@babel/core": "^7.24.0",
@@ -31,7 +31,9 @@
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3",
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
