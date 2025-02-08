@@ -1,6 +1,10 @@
 {
   "name": "ts-monorepo",
   "private": true,
+  "engines": {
+    "node": ">=18.18.0",
+    "yarn": ">=1.22.0"
+  },
   "workspaces": [
     "packages/*"
   ],
