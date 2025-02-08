@@ -46,13 +46,11 @@ describe('Utility Functions', () => {
     it('should group array items by key', () => {
       const result = groupBy(testData, 'category');
       expect(result).toEqual({
-        'A': [
+        A: [
           { id: 1, category: 'A', value: 'first' },
           { id: 3, category: 'A', value: 'third' },
         ],
-        'B': [
-          { id: 2, category: 'B', value: 'second' },
-        ],
+        B: [{ id: 2, category: 'B', value: 'second' }],
       });
     });
 
@@ -61,4 +59,4 @@ describe('Utility Functions', () => {
       expect(result).toEqual({});
     });
   });
-}); 
+});
